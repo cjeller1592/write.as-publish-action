@@ -6,4 +6,6 @@ COPY . .
 
 RUN pip3 install -r requirements.txt
 
+ENV PYTHONPATH /app
+
 RUN python3 main.py
