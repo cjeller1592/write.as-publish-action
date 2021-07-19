@@ -15,5 +15,4 @@ jobs:
       - name: hello-action
         uses: ./.github/actions/writeas-publish
         with:
-          blog: "the-test-blog"
           token: ${{ secrets.TOKEN }}

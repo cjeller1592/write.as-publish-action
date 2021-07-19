@@ -6,10 +6,9 @@ description: "Publish a post to your Write.as blog on a regular schedule"
 inputs:
   draft:
     description: "Anonymous post ID whose contents you want to publish to your Write.as blog"
-    
+
   blog:
     description: "Alias for Write.as blog you want to publish to"
-    required: true
 
   token:
     description: "Authorization Token for publishing to Write.as blog"
