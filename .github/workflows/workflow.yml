@@ -1,0 +1,19 @@
+name: Write.as Publish Scheduler
+
+on:
+  schedule:
+      - cron: '0 22 * * 1-5'
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: hello-action
+        uses: ./.github/actions/writeas-publish
+        with:
+          draft: ${{ secrets.DRAFT_ID }}
+          blog: "the-test-blog"
+          token: ${{ secrets.API_TOKEN }}

@@ -1,0 +1,21 @@
+name: "write.as publish scheduler"
+
+description: "Publish a post to your Write.as blog on a regular schedule"
+
+# Inputs needed: token, blog, schedule?
+inputs:
+  draft:
+    description: "Anonymous post ID whose contents you want to publish to your Write.as blog"
+    required: true
+
+  blog:
+    description: "Alias for Write.as blog you want to publish to"
+    required: true
+
+  token:
+    description: "Authorization Token for publishing to Write.as blog"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
