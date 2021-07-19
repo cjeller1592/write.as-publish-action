@@ -14,9 +14,9 @@ title = draft['title']
 body = draft['body']
 
 # Create post on my blog
-p = c.createCPost(blog, body, title)
+p = c.createCPost('the-test-blog', body, title)
 slug = p['slug']
-url = f'https://blog.cjeller.site/{slug}'
+url = f'https://the-test-blog.writeas.com/{slug}'
 
 # Show published url
 print(f'Post published! Here is the url: {url}')
