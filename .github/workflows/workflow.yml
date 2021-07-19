@@ -1,8 +1,9 @@
 name: Write.as Publish Scheduler
 
 on:
+  push:
   schedule:
-      - cron: '0 22 * * 1-5'
+      - cron: "0 22 * * 1-5"
 
 jobs:
   action:
