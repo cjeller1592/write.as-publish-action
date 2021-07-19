@@ -15,6 +15,5 @@ jobs:
       - name: hello-action
         uses: ./.github/actions/writeas-publish
         with:
-          draft: ${{ secrets.DRAFT_ID }}
           blog: "the-test-blog"
-          token: ${{ secrets.API_TOKEN }}
+          token: ${{ secrets.TOKEN }}
