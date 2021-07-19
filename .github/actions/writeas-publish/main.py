@@ -2,8 +2,8 @@ import writeas
 import os
 
 # Grab variables
-blog = os.env.get('INPUT_BLOG')
-token = os.env.get('INPUT_TOKEN')
+blog = os.environ.get('INPUT_BLOG')
+token = os.environ.get('INPUT_TOKEN')
 
 # Instanciate Write.as client with auth token
 c = writeas.client()
