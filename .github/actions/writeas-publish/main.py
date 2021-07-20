@@ -2,7 +2,7 @@ import writeas
 import os
 
 # Grab variables
-token = os.environ['INPUT_TOKEN']
+token = os.environ['INPUT_WRTIEAS_TOKEN']
 
 # Instanciate Write.as client with auth token
 c = writeas.client()

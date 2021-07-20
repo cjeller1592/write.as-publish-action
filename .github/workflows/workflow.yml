@@ -13,4 +13,4 @@ jobs:
       - name: hello-action
         uses: ./.github/actions/writeas-publish
         with:
-          token: "${{ secrets.TOKEN }}"
+          writeas_token: ${{ secrets.TOKEN }}

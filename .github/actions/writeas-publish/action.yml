@@ -10,7 +10,7 @@ inputs:
   # blog:
   #   description: "Alias for Write.as blog you want to publish to"
 
-  token:
+  writeas_token:
     description: "Authorization Token for publishing to Write.as blog"
     required: true
 
