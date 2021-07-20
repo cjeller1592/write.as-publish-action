@@ -4,18 +4,17 @@ description: "Publish a post to your Write.as blog on a regular schedule"
 
 # Inputs needed: token, blog, schedule?
 inputs:
-  draft:
-    description: "Anonymous post ID whose contents you want to publish to your Write.as blog"
+  # draft:
+  #   description: "Anonymous post ID whose contents you want to publish to your Write.as blog"
 
-  blog:
-    description: "Alias for Write.as blog you want to publish to"
+  # blog:
+  #   description: "Alias for Write.as blog you want to publish to"
 
   token:
     description: "Authorization Token for publishing to Write.as blog"
     required: true
+    default: "replace-me"
 
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{ inputs.token }}
