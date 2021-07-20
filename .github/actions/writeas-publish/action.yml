@@ -13,7 +13,6 @@ inputs:
   token:
     description: "Authorization Token for publishing to Write.as blog"
     required: true
-    default: "replace-me"
 
 runs:
   using: "docker"

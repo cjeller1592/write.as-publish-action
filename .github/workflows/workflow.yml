@@ -6,13 +6,11 @@ on:
       - cron: "0 22 * * 1-5"
 
 jobs:
-  action:
+  Publish:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v1
-
       - name: hello-action
         uses: ./.github/actions/writeas-publish
         with:
-          token: ${{ secrets.TOKEN }}
+          token: "${{ secrets.TOKEN }}"
